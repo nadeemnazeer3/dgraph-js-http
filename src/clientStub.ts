@@ -128,6 +128,7 @@ export class DgraphClientStub {
               ).join("&");
           }
         }
+        headers["Content-Type"] = "application/graphql+-";
 
         return this.callAPI(url, {
             method: "POST",
